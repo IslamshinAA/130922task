@@ -49,3 +49,26 @@
 // Massiv(arr);
 // Console.WriteLine("Исходный массив : [" + string.Join (", ", arr) + " ]");
 // Console.WriteLine("Сумма нечётных элементов в массиве = " + Summ(arr));
+
+// Задача 38: Задайте массив дробных чисел. Найдите разницу между максимальным и минимальным элементов массива.
+// [3,5 7,78 22 2,23 78, 25] -> 76,02
+
+double [] array = {85.4 , 33.5 , 45.5 , 34.56 , 67.4 , 78 , 37.4 , 75.57 };
+double Massiv(double[] arr)
+{
+    double max = arr[0];
+    double min = arr[0];
+    for (int i = 0; i < arr.Length; i++)
+     {   if(arr[i] >= max)
+            max = arr[i];
+        for (int j = 0; j < arr.Length; j++)
+          {  if (min >= arr[j])
+                min = arr[j];
+          }
+     }
+     double result = max - min;
+     return result;
+}
+Massiv(array);
+Console.WriteLine("Массив : [ " + string.Join(", ", array) + " ]");
+Console.WriteLine("Разница между максимальным и "  + Massiv(array));
