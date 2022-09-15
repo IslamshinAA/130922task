@@ -26,17 +26,26 @@
 //стоящих на нечётных позициях.
 // [3, 7, 23, 12] -> 19
 // [-4, -6, 89, 6] -> 0
-Console.WriteLine("Введите число элементов в массиве: ");
-int n = Convert.ToInt32(Console.ReadLine());
-void  Numbers ( int [] array)
-{
-    for (int i = 0; i < array.Length; i++)
-             array[i] = new Random().Next(-99, 100);
-}
+// Задача 36: Задайте одномерный массив, заполненный случайными числами. Найдите сумму элементов, стоящих на нечётных позициях.
+// [3, 7, 23, 12] -> 19
+// [-4, -6, 89, 6] -> 0
 
+// Console.WriteLine("Input number: ");
+// int n = Convert.ToInt32(Console.ReadLine());
+// void Massiv (int [] array)
+// {
+//     for(int i = 0; i < array.Length; i++)
+//     array[i] = new Random().Next(-99, 100);
+// }
+// int Summ (int [] array)
+// {
+//     int result = 0;
+//     for(int i = 1; i < array.Length; i += 2) 
+//     result = result + array[i];
+//     return result;
+// }
 
-
-
-int [] arr = new int[n];
-Numbers(arr);
-Console.WriteLine("Исходный массив данных: [" + string.Join(", ", arr) + " ]");
+// int [] arr = new int [n];
+// Massiv(arr);
+// Console.WriteLine("Исходный массив : [" + string.Join (", ", arr) + " ]");
+// Console.WriteLine("Сумма нечётных элементов в массиве = " + Summ(arr));
